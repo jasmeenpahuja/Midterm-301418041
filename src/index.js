@@ -1,13 +1,20 @@
+// src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import AddProduct from './Addproduct';
+import SignUpUser from './SignUpUser'; // Import the SignUpUser component
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <h1>Add Product</h1>
+      <AddProduct />
+      <h1>Sign Up User</h1>
+      <SignUpUser />
+    </div>
   </React.StrictMode>
 );
 
